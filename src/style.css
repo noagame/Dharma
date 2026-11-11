@@ -47,7 +47,16 @@ a {
 }
 
 .site-header {
+  width: 100%;
+  max-width: none;
+  margin: 0;
   border-bottom: 1px solid rgb(245 241 232 / 15%);
+  background-image:
+    linear-gradient(rgb(17 16 14 / 55%), rgb(17 16 14 / 55%)),
+    url('./assets/heroD.jpeg');
+  background-position: center 62%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .brand {
