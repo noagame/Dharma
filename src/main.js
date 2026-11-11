@@ -10,7 +10,7 @@ document.querySelector('#app').innerHTML= `
 
 <header class="sticky top-0 z-50 border-b border-stone-200 bg-white/95 between backdrop gap-x-8 gap-3 px-5 py-4">
   <div class="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-x-8 gap-y-3 px-5 py-4">
-    <a class="brand flex items-center gap-x-3" href="#inicio" aria-label="Dhrama, inicio> 
+    <a class="brand flex items-center gap-x-3" href="#inicio" aria-label="Dhrama, inicio"> 
       <span class="brand_name">Dharma</span>
     </a>
 
@@ -28,7 +28,7 @@ document.querySelector('#app').innerHTML= `
 <main id="inicio">
   <section class= "hero">
     <div class="hero__content">
-      <a class="bran__name" arial-label="Dhrama, inicio" href="#inicio"> 
+      <a class="bran__name" aria-label="Dhrama, inicio" href="#inicio"> 
         <h2><span class="brand_name">Dharma</span></h2> 
       </a>
 
@@ -43,4 +43,3 @@ document.querySelector('#app').innerHTML= `
   ${Footer()}
 </main>
 `
-
