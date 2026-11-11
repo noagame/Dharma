@@ -1,6 +1,13 @@
 export function Contacto() {
-    return`
-    Hola soy Camilo Velasquez fundador de Dharma y Entrenador personal
-    Buscar crecer y colver a conectarte con la naturaleza,
-    Confia en Dharma y lo que proponemos`
+  return `
+    <section class="content-section content-section--dark" id="contacto" aria-labelledby="contact-title">
+      <p class="eyebrow">Conoce a quien está detrás</p>
+      <h2 id="contact-title">Una idea que nace del movimiento.</h2>
+      <p>
+        Soy Camilo Velásquez, fundador de Dharma y entrenador personal.
+        Quiero ayudarte a crecer y a reconectar con la naturaleza. Confía en
+        Dharma y en lo que estamos construyendo.
+      </p>
+    </section>
+  `
 }

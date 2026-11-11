@@ -1,50 +1,58 @@
 import './style.css'
-import heroImg from './assets/heroD.jpeg'
+import heroImg from './assets/dharma-forest-gate.png'
 import { Enfoque } from './complementos/enfoque.js'
 import { Historia } from './complementos/historia.js'
 import { Producto } from './complementos/productos.js'
 import { Contacto } from './complementos/contacto.js'
 import { Footer } from './complementos/footer.js'
 
-document.querySelector('#app').innerHTML= `
+document.querySelector('#app').innerHTML = `
+  <div class="site-atmosphere" style="--scene-image: url('${heroImg}')">
+    <div class="petal-layer" aria-hidden="true">
+      <span class="petal"></span>
+      <span class="petal"></span>
+      <span class="petal"></span>
+      <span class="petal"></span>
+      <span class="petal"></span>
+      <span class="petal"></span>
+      <span class="petal"></span>
+    </div>
 
-<header class="site-header sticky top-0 z-50 border-b border-white/15 px-5 py-4">
-  <div class="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-x-8 gap-y-3 px-5 py-4">
-    <a class="brand flex items-center gap-x-3" href="#inicio" aria-label="Dharma, inicio">
-      <span class="brand_name">Dharma</span>
-    </a>
+    <header class="site-header">
+      <a class="brand" href="#inicio" aria-label="Dharma, inicio">Dharma</a>
 
-    <nav aria-label="Navegación principal" class="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm font-medium leading-6 text-stone-700">
-        <a href="#historia" class="transition hover:text-emerald-800">¿Qué es Dharma?</a>
-        <a href="#enfoque" class="transition hover:text-emerald-800">Nuestro enfoque</a>
-        <a href="#producto" class="transition hover:text-emerald-800">Producto inicial</a>
-    </nav>
-  
-  </div>
-</header>
+      <nav class="site-nav" aria-label="Navegación principal">
+        <a href="#historia">La marca</a>
+        <a href="#enfoque">Nuestro enfoque</a>
+        <a href="#producto">Próximo lanzamiento</a>
+        <a hrfe="#contacto">Contacto</a>
+      </nav>
+    </header>
 
-<main id="inicio">
-  <section class= "hero">
-    <div class="hero__content">
-        
-      <img
-        class="hero__logo" 
-        src="${heroImg}" 
-        alt="Logotipo principal de Dharma con un loto dorado sobre fondo negro"
-        />
+    <main>
+      <section class="hero" id="inicio" aria-labelledby="hero-title">
+        <div class="hero__content">
+          <p class="eyebrow">Ropa para moverte con propósito</p>
+          <h1 id="hero-title">Dharma</h1>
+          <p class="hero__intro">
+            Una marca para acompañarte en el gimnasio, en la montaña y en cada
+            desafío que te conecta con el movimiento.
+          </p>
+          <a class="button" href="#historia">Conoce nuestra esencia</a>
+        </div>
 
-      <a class="brand__name" aria-label="Dharma, inicio" href="#inicio">
-        <h2><span class="brand__name">Dharma</span></h2>
-      </a>
+        <a class="scroll-cue" href="#historia" aria-label="Desplazarse a la sección La marca">
+          <span>Descubre Dharma</span>
+          <span class="scroll-cue__arrow" aria-hidden="true">↓</span>
+        </a>
+      </section>
 
       ${Historia()}
       ${Enfoque()}
       ${Producto()}
       ${Contacto()}
+    </main>
 
-    </div>
-  </section>
-  
-  ${Footer()}
-</main>
+    ${Footer()}
+  </div>
 `
