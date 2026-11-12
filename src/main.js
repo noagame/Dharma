@@ -16,7 +16,7 @@ document.querySelector('#app').innerHTML = `
       <div class="mx-auto flex min-h-[4.25rem] w-full max-w-6xl items-center justify-between gap-8 px-6 py-3 max-[700px]:min-h-0 max-[700px]:flex-wrap max-[700px]:gap-x-4 max-[700px]:gap-y-2 max-[700px]:px-5">
         <a class="shrink-0 text-base font-bold uppercase tracking-[0.2em] text-dharma-gold no-underline" href="#inicio" aria-label="Dharma, inicio">Dharma</a>
 
-        <nav class="flex items-center gap-x-8 max-[700px]:w-full max-[700px]:justify-between max-[700px]:gap-x-3 max-[700px]:overflow-x-auto" aria-label="Navegación principal">
+        <nav class="flex items-center gap-x-8 max-[700px]:w-full max-[700px]:flex-wrap max-[700px]:justify-start max-[700px]:gap-x-4 max-[700px]:gap-y-2" aria-label="Navegación principal">
           <a class="whitespace-nowrap text-[0.82rem] tracking-wide text-dharma-text/80 no-underline transition-colors hover:text-dharma-gold focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-dharma-gold max-[700px]:text-xs" href="#historia">La marca</a>
           <a class="whitespace-nowrap text-[0.82rem] tracking-wide text-dharma-text/80 no-underline transition-colors hover:text-dharma-gold focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-dharma-gold max-[700px]:text-xs" href="#enfoque">Nuestro enfoque</a>
           <a class="whitespace-nowrap text-[0.82rem] tracking-wide text-dharma-text/80 no-underline transition-colors hover:text-dharma-gold focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-dharma-gold max-[700px]:text-xs" href="#producto">Próximo lanzamiento</a>

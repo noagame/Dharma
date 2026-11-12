@@ -20,6 +20,7 @@
     min-width: 320px;
     margin: 0;
     background: var(--color-dharma-ink);
+    overflow-x: clip;
   }
 
   a {
