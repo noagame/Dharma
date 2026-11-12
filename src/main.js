@@ -26,7 +26,7 @@ document.querySelector('#app').innerHTML = `
         <a href="#historia">La marca</a>
         <a href="#enfoque">Nuestro enfoque</a>
         <a href="#producto">Próximo lanzamiento</a>
-        <a href="#contacto">Contacto</a>
+        <a href="#contacto">El fundador</a>
       </nav>
     </header>
 
