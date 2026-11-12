@@ -20,6 +20,7 @@ document.querySelector('#app').innerHTML = `
           <a class="whitespace-nowrap text-[0.82rem] tracking-wide text-dharma-text/80 no-underline transition-colors hover:text-dharma-gold focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-dharma-gold max-[700px]:text-xs" href="#historia">La marca</a>
           <a class="whitespace-nowrap text-[0.82rem] tracking-wide text-dharma-text/80 no-underline transition-colors hover:text-dharma-gold focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-dharma-gold max-[700px]:text-xs" href="#enfoque">Nuestro enfoque</a>
           <a class="whitespace-nowrap text-[0.82rem] tracking-wide text-dharma-text/80 no-underline transition-colors hover:text-dharma-gold focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-dharma-gold max-[700px]:text-xs" href="#producto">Próximo lanzamiento</a>
+          <a class="whitespace-nowrap text-[0.82rem] tracking-wide text-dharma-gold no-underline transition-colors hover:text-dharma-text focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-dharma-gold max-[700px]:text-xs" href="/store/">Tienda</a>
           <a class="whitespace-nowrap text-[0.82rem] tracking-wide text-dharma-text/80 no-underline transition-colors hover:text-dharma-gold focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-dharma-gold max-[700px]:text-xs" href="#contacto">Contacto</a>
         </nav>
       </div>

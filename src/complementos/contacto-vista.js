@@ -1,8 +1,8 @@
-const clasesBoton = 'inline-flex min-h-[3.1rem] items-center justify-center rounded-sm border border-dharma-gold/75 px-5 py-3 text-[0.82rem] font-semibold tracking-wide text-dharma-text no-underline transition-colors hover:bg-dharma-gold hover:text-dharma-ink focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-dharma-gold'
+const clasesBoton = 'inline-flex min-h-[3.1rem] items-center justify-center rounded-sm border border-dharma-gold/75 px-5 py-3 max-[360px]:px-4 text-[0.82rem] font-semibold tracking-wide text-dharma-text no-underline transition-colors hover:bg-dharma-gold hover:text-dharma-ink focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-dharma-gold'
 
 export function plantillaContacto({ fotos, nombre, biografia, contacto }) {
   return `
-    <section class="relative z-10 mx-auto mb-8 grid w-full max-w-6xl scroll-mt-20 grid-cols-1 items-center gap-7 border border-white/15 bg-dharma-ink/80 p-5 shadow-2xl backdrop-blur-xl md:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)] md:gap-12 md:p-10 lg:p-14 max-[700px]:ml-16 max-[700px]:mr-0 max-[700px]:w-auto" id="contacto" aria-labelledby="contact-title">
+    <section class="relative z-10 mx-auto mb-8 grid w-full max-w-6xl scroll-mt-20 grid-cols-1 items-center gap-7 border border-white/15 bg-dharma-ink/80 p-5 shadow-2xl backdrop-blur-xl md:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)] md:gap-12 md:p-10 lg:p-14 max-[700px]:ml-16 max-[360px]:ml-12 max-[700px]:mr-0 max-[700px]:w-auto" id="contacto" aria-labelledby="contact-title">
       <span class="absolute left-[-1.55rem] top-1/2 size-3 -translate-y-1/2 rounded-full border-2 border-dharma-ink bg-dharma-gold shadow-[0_0_0_4px_rgb(199_164_91_/_24%),0_0_1rem_rgb(199_164_91_/_65%)] max-[700px]:left-[-3.15rem]" aria-hidden="true"></span>
 
       <div class="grid min-h-[34rem] grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)] grid-rows-2 gap-3 max-[700px]:min-h-0 max-[700px]:grid-cols-2 max-[700px]:grid-rows-[15rem_9rem]" role="group" aria-label="Camilo en la naturaleza y entrenando">

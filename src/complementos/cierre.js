@@ -8,7 +8,7 @@ export function Cierre() {
       <p class="mb-8 max-w-[34rem] text-[clamp(1rem,2vw,1.15rem)] leading-[1.8] text-dharma-muted">
         Muévete con intención. Explora a tu manera. Dharma te acompaña en cada paso.
       </p>
-      <a class="${clasesBoton}" href="#producto">Descubre lo que viene</a>
+      <a class="${clasesBoton}" href="../store/index.html">Descubre lo que viene</a>
     </section>
   `
 }
