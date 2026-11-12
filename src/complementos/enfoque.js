@@ -1,7 +1,7 @@
 export function Enfoque() {
   return `
         <section class="content-section content-section--dark" id="enfoque" aria-labelledby="focus-title">
-            <p class="eyebrow">Nuestro enfoque</p>
+            <p class="eyebrow">02 / Tu ritmo</p>
             <h2 id="focus-title">Movimiento en distintas disciplinas</h2>
             <p>
                 Una misma actitud para distintas disciplinas: entrenar con intención,

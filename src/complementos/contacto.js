@@ -1,7 +1,7 @@
 export function Contacto() {
   return `
     <section class="content-section content-section--dark" id="contacto" aria-labelledby="contact-title">
-      <p class="eyebrow">Conoce a quien está detrás</p>
+      <p class="eyebrow">04 / Detrás de Dharma</p>
       <h2 id="contact-title">Una idea que nace del movimiento.</h2>
       <p>
         Soy Camilo Velásquez, fundador de Dharma y entrenador personal.

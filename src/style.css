@@ -294,6 +294,135 @@ p {
   backdrop-filter: blur(4px);
 }
 
+/* El SVG une las paradas y crea una sola ruta a través de la página. */
+.journey {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  padding: 2rem 1.5rem 4rem;
+}
+
+.journey-path {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  pointer-events: none;
+}
+
+.journey-path__base,
+.journey-path__flow {
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  vector-effect: non-scaling-stroke;
+}
+
+.journey-path__base {
+  stroke: rgb(199 164 91 / 54%);
+  stroke-width: 2px;
+}
+
+.journey-path__flow {
+  stroke: rgb(245 220 157 / 88%);
+  stroke-width: 1.5px;
+  stroke-dasharray: 2 12;
+  animation: path-flow 18s linear infinite;
+}
+
+@keyframes path-flow {
+  to { stroke-dashoffset: -140; }
+}
+
+.journey .content-section {
+  z-index: 1;
+  display: flex;
+  width: min(46%, 32rem);
+  min-height: 24rem;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 0 2rem;
+  padding: clamp(2rem, 5vw, 3.5rem);
+  border: 1px solid rgb(245 241 232 / 14%);
+  background: rgb(17 16 14 / 78%);
+  box-shadow: 0 1.5rem 4rem rgb(0 0 0 / 18%);
+  backdrop-filter: blur(12px);
+}
+
+.journey #historia,
+.journey #producto {
+  margin-right: auto;
+}
+
+.journey #enfoque,
+.journey #contacto {
+  margin-left: auto;
+}
+
+.journey .content-section::before {
+  position: absolute;
+  top: 50%;
+  right: -1.15rem;
+  width: 0.8rem;
+  height: 0.8rem;
+  border: 2px solid #171510;
+  border-radius: 50%;
+  background: var(--color-gold);
+  box-shadow: 0 0 0 4px rgb(199 164 91 / 24%), 0 0 1rem rgb(199 164 91 / 65%);
+  content: "";
+  transform: translateY(-50%);
+}
+
+.journey #enfoque::before,
+.journey #contacto::before {
+  right: auto;
+  left: -1.15rem;
+}
+
+.closing-section {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  min-height: min(46rem, 90svh);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 8rem 1.5rem 10rem;
+  overflow: hidden;
+  text-align: center;
+  background: linear-gradient(
+    180deg,
+    rgb(17 16 14 / 8%) 0%,
+    rgb(17 16 14 / 74%) 28%,
+    rgb(17 16 14 / 96%) 70%,
+    #11100e 100%
+  );
+}
+
+.closing-section h2 {
+  margin: 0 0 1.5rem;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(3.5rem, 9vw, 7.5rem);
+  font-weight: 400;
+  letter-spacing: -0.055em;
+  line-height: 0.98;
+}
+
+.closing-section h2 span {
+  color: var(--color-gold);
+  font-style: italic;
+}
+
+.closing-section__text {
+  max-width: 34rem;
+  margin: 0 0 2rem;
+  color: var(--color-muted);
+  font-size: clamp(1rem, 2vw, 1.15rem);
+  line-height: 1.8;
+}
+
 .values-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -330,6 +459,7 @@ p {
   gap: 1.5rem;
   padding: 1.5rem max(1.5rem, calc((100vw - var(--content-width)) / 2));
   border-top: 1px solid rgb(245 241 232 / 12%);
+  background: #11100e;
 }
 
 .site-footer p {
@@ -399,6 +529,42 @@ a:focus-visible {
     padding-left: 1.25rem;
   }
 
+  .journey {
+    padding: 1.5rem 1rem 2rem;
+  }
+
+  .journey-path {
+    left: 0;
+    width: 5rem;
+  }
+
+  .journey .content-section,
+  .journey .content-section--dark {
+    width: auto;
+    min-height: 0;
+    margin: 0 0 1.5rem 4rem;
+    padding: 2rem 1.35rem;
+  }
+
+  .journey #historia,
+  .journey #enfoque,
+  .journey #producto,
+  .journey #contacto {
+    margin-left: 4rem;
+  }
+
+  .journey .content-section::before,
+  .journey #enfoque::before,
+  .journey #contacto::before {
+    right: auto;
+    left: -3.15rem;
+  }
+
+  .closing-section {
+    min-height: 75svh;
+    padding: 6rem 1.25rem 7rem;
+  }
+
   .values-grid {
     grid-template-columns: 1fr;
     margin-top: 1.75rem;
@@ -426,5 +592,9 @@ a:focus-visible {
 
   .petal {
     display: none;
+  }
+
+  .journey-path__flow {
+    animation: none;
   }
 }

@@ -4,6 +4,7 @@ import { Enfoque } from './complementos/enfoque.js'
 import { Historia } from './complementos/historia.js'
 import { Producto } from './complementos/productos.js'
 import { Contacto } from './complementos/contacto.js'
+import { Cierre } from './complementos/cierre.js'
 import { Footer } from './complementos/footer.js'
 
 document.querySelector('#app').innerHTML = `
@@ -25,7 +26,7 @@ document.querySelector('#app').innerHTML = `
         <a href="#historia">La marca</a>
         <a href="#enfoque">Nuestro enfoque</a>
         <a href="#producto">Próximo lanzamiento</a>
-        <a hrfe="#contacto">Contacto</a>
+        <a href="#contacto">Contacto</a>
       </nav>
     </header>
 
@@ -47,10 +48,19 @@ document.querySelector('#app').innerHTML = `
         </a>
       </section>
 
-      ${Historia()}
-      ${Enfoque()}
-      ${Producto()}
-      ${Contacto()}
+      <div class="journey" role="group" aria-label="El camino Dharma">
+        <svg class="journey-path" viewBox="0 0 1000 1800" preserveAspectRatio="none" aria-hidden="true">
+          <path class="journey-path__base" d="M500 0 C470 80 350 100 360 210 S650 310 640 430 S350 530 360 650 S650 760 640 870 S350 980 360 1100 S650 1210 640 1330 S450 1450 500 1600" />
+          <path class="journey-path__flow" d="M500 0 C470 80 350 100 360 210 S650 310 640 430 S350 530 360 650 S650 760 640 870 S350 980 360 1100 S650 1210 640 1330 S450 1450 500 1600" />
+        </svg>
+
+        ${Historia()}
+        ${Enfoque()}
+        ${Producto()}
+        ${Contacto()}
+      </div>
+
+      ${Cierre()}
     </main>
 
     ${Footer()}
